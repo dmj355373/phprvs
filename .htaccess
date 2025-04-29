@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /phprvs
+RewriteCond %{REQUEST_URI}  !(\.xml|\.php|\.html|\.png|\.jpg|\.webp|\.gif|\.jpeg|\.svg|\.scss|\.map|\.download|\.zip|\.rar|\.tar|\.css|\.svg|\.js|\.jsx|\.json|\.min|\.pdf|\.eot|\.ttf|\.woff|\.woff2|\.mp3|\.mp4|\.wmv|\.ico|\.docx|\.xlsx|\.pptx)$
+RewriteRule (.*) routes.php [QSA,L]
